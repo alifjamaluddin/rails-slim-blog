@@ -11,9 +11,19 @@ sqlite
 * Deployment instructions
 ``` $ rails s ```
 
+* Dependencies
+------------
+- gem devise
+- gem rails_admin
+- gem slim
+- gem 'bootstrap-sass', '~> 3.2.0'
+- gem 'autoprefixer-rails'
+
 Features
 --------
-- Authentication 
+- HTML template with Slim-lang
+- Design using bootstrap
+- Authentication
 - Admin panel
 
 Features to do
