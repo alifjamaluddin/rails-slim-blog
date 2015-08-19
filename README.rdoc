@@ -15,3 +15,8 @@ sqlite
 - Authentication 
 - Admin panel
 
+* Features to do
+- Authorization with cancan
+- Audit with papertrail
+- Upload article cover photo with carrierwave
+- OAuth with facebook
