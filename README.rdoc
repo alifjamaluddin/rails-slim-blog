@@ -1,14 +1,17 @@
 == README
 
 * Ruby version
-ruby 2.0.0p481
+``` ruby 2.0.0p481 ```
 
 * Database creation
 sqlite
 * Database initialization
-$ rake db:migrate
+``` $ rake db:migrate ```
 
 * Deployment instructions
-$ rails s
+``` $ rails s ```
 
+* Features
+- Authentication 
+- Admin panel
 
