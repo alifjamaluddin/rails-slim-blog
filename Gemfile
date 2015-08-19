@@ -53,4 +53,4 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 
 gem 'rails_12factor', group: :production
-ruby "2.0.0p481"
+ruby "2.0.0"
