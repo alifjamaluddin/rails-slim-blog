@@ -6,7 +6,7 @@ nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand href="http://www.kodegeek.ninja"  AJ Blog
+      =link_to 'AJ Blog', root_path, {:class=>'navbar-brand'} 
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav.navbar-right
         li
@@ -15,11 +15,4 @@ nav.navbar.navbar-default.navbar-custom.navbar-fixed-top
           a href="about.html"  About
         li
           a href="contact.html"  Contact
-header.intro-header style=("background-image: url('home-bg.jpg')") 
-  .container
-    .row
-      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-        .site-heading
-          h1 Alif Jamaluddin
-          hr.small/
-          span.subheading Example Blog by Alif Jamaluddin
+

@@ -1,4 +1,12 @@
-p#notice == notice 
+header.intro-header style=("background-image: url('home-bg.jpg')") 
+  .container
+    .row
+      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
+        .site-heading
+          h1 Alif Jamaluddin
+          hr.small/
+          span.subheading Example Blog by Alif Jamaluddin
+p#notice = notice 
 
 .container
   .row
@@ -12,7 +20,7 @@ p#notice == notice
               p.post-meta
                 | Posted by 
                 a href="#"  = post.user.profile.name
-                |  on September 24, 2014
+                =  post.created_at.strftime(" on %B %d, %Y") 
             hr/
 
 
@@ -23,26 +31,4 @@ p#notice == notice
       ul.pager
         li.next
           a href="#"  Older Posts &rarr;
-hr/
-/! Footer
-footer
-  .container
-    .row
-      .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-        ul.list-inline.text-center
-          li
-            a href="#" 
-              span.fa-stack.fa-lg
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-twitter.fa-stack-1x.fa-inverse
-          li
-            a href="#" 
-              span.fa-stack.fa-lg
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-facebook.fa-stack-1x.fa-inverse
-          li
-            a href="#" 
-              span.fa-stack.fa-lg
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-github.fa-stack-1x.fa-inverse
-        p.copyright.text-muted Copyright &copy; Your Website 2014
+
