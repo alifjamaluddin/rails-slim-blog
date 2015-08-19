@@ -19,3 +19,10 @@ article
       .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
         = @post.content
         
+        hr
+
+        .profile
+          a = link_to @post
+            img.avatar src="#{@post.user.profile.avatar}" 
+          h5 = @post.user.profile.name
+          small = @post.user.profile.bio

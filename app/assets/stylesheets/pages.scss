@@ -1,3 +1,16 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.avatar {
+	width: 100px;
+	height: 100px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 150px;
+}
+
+.profile{
+	text-align: center;
+}
+     
