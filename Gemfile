@@ -62,6 +62,7 @@ gem 'devise'
 gem 'rails_admin'
 
 gem 'slim'
+gem 'sqlite3'
 
 # gem 'pg'
 
