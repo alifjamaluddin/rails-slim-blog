@@ -63,7 +63,7 @@ gem 'rails_admin'
 
 gem 'slim'
 
-gem 'pg'
+# gem 'pg'
 
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'

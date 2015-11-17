@@ -1,5 +1,5 @@
 # Change these
-server '192.168.1.170', port: 3000, roles: [:web, :app, :db], primary: true
+server '192.168.1.170', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:anocriny/rails-slim-blog.git'
 set :application,     'rails-slim-blog'
