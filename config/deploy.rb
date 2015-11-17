@@ -2,7 +2,7 @@
 server '192.168.1.170', port: 3000, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:anocriny/rails-slim-blog.git'
-set :application,     'blog'
+set :application,     'rails-slim-blog'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
