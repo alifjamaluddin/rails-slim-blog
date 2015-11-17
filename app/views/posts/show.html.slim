@@ -1,13 +1,14 @@
-<p id="notice"><%= notice %></p>
-
 p.notice = notice
+
 
 header.intro-header style=("background-image: url('../../post-bg.jpg')") 
   .container
     .row
       .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
         .post-heading
-          h1 = @post.title
+          h1  
+            = @post.title 
+
           /h2.subheading Problems look mighty small from 150 miles up
           span.meta
             | Posted by 

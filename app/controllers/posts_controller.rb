@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-
+  require 'parse-ruby-client'
   # GET /posts
   # GET /posts.json
   def index
@@ -30,6 +30,10 @@ class PostsController < ApplicationController
       if @post.save
         format.html { redirect_to @post, notice: 'Post was successfully created.' }
         format.json { render :show, status: :created, location: @post }
+        client = Parse.init(application_id: 'QB8MVuvXQTw9PDZ7VEjv03d3RheH7Y4FMfZCXkoE', api_key: 'pX3KupGw1xnzautQEXvzM3ljlBdte5h3MDy5TiM7')
+        data = { :alert => "One article titled '#{post_params[:title]}' has been released" }
+        push = Parse::Push.new(data, "Anokri")
+        push.save
       else
         format.html { render :new }
         format.json { render json: @post.errors, status: :unprocessable_entity }
