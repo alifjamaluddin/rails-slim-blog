@@ -130,7 +130,6 @@ GEM
     parse-ruby-client (0.3.0)
       faraday
       faraday_middleware
-    pg (0.18.2)
     puma (2.15.3)
     rack (1.6.4)
     rack-pjax (0.8.0)
@@ -251,7 +250,6 @@ DEPENDENCIES
   jquery-rails
   mini_magick
   parse-ruby-client
-  pg
   puma
   rails (= 4.2.0)
   rails_12factor
